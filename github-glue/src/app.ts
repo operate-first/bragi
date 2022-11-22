@@ -42,7 +42,7 @@ export default (
   app: Probot,
   {
     getRouter,
-  }: { getRouter?: ((path?: string | undefined) => Router) | undefined }
+  }: { getRouter?: ((path?: string | undefined) => Router) | undefined },
 ) => {
   // Expose additional routes for /healthz and /metrics
   if (!getRouter) {
@@ -128,12 +128,12 @@ export default (
         'v1beta1',
         getNamespace(),
         'taskruns',
-        generateTaskPayload('example', context)
+        generateTaskPayload('example', context),
       ),
       {
         install: context.payload.installation.id,
         method: 'scheduleExampleTaskRun',
-      }
+      },
     );
   });
 
