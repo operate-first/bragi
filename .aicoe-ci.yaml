@@ -2,7 +2,7 @@ check:
   - thoth-build
 build:
   build-stratergy: Containerfile
-  dockerfile-path: github-glue/Containerfile
+  dockerfile-path: Containerfile
   registry: quay.io
   registry-org: operate-first
   registry-project: bragi
