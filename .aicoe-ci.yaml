@@ -1,1 +1,9 @@
-check: []
+check:
+  - thoth-build
+build:
+  build-stratergy: Containerfile
+  dockerfile-path: Containerfile
+  registry: quay.io
+  registry-org: operate-first
+  registry-project: bragi
+  registry-secret: operate-first-pusher-secret
