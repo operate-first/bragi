@@ -14,7 +14,7 @@ runs:
       id: s2ibase
       uses: juliangruber/read-file-action@v1
       with:
-        path: ./.s2ibase
+        path: ./github-glue/.s2ibase
 
     - name: S2I Build
       uses: redhat-actions/s2i-build@v2
