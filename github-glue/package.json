@@ -12,30 +12,30 @@
     "lint": "prettier --check 'src/**/*.{ts,js}'; eslint src --ext .ts,.js"
   },
   "dependencies": {
-    "@operate-first/probot-kubernetes": "1.0.2",
+    "@operate-first/probot-kubernetes": "1.0.3",
     "@operate-first/probot-metrics": "1.0.0",
-    "@operate-first/probot-issue-form": "1.0.1",
-    "probot": "12.2.8"
+    "@operate-first/probot-issue-form": "1.0.2",
+    "probot": "12.3.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.6",
-    "@types/jest": "29.2.3",
-    "@types/node": "16.18.3",
+    "@types/jest": "29.5.6",
+    "@types/node": "16.18.59",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "@typescript-eslint/parser": "5.43.0",
     "eslint": "8.28.0",
     "eslint-config-prettier": "8.5.0",
-    "jest": "29.3.1",
-    "nock": "13.2.9",
-    "nodemon": "2.0.20",
+    "jest": "29.7.0",
+    "nock": "13.3.6",
+    "nodemon": "2.0.22",
     "prettier": "2.7.1",
     "smee-client": "1.2.3",
-    "ts-jest": "29.0.3",
+    "ts-jest": "29.1.1",
     "ts-node": "10.9.1",
-    "typescript": "4.9.3"
+    "typescript": "4.9.5"
   },
   "engines": {
     "node": ">= 10.13.0"
