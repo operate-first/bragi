@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Check actor's permissions
         uses: ./.github/actions/check-maintainer-role
@@ -36,7 +36,7 @@ jobs:
           IMAGES: ${{ steps.stage.outputs.result }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         id: pr
         with:
           commit-message: "chore(manifests): Promote staging to prod"
@@ -54,7 +54,7 @@ jobs:
             ```
 
       - name: Create success comment
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.issue.number }}
           comment-id: ${{ steps.check-promote.outputs.comment-id }}
