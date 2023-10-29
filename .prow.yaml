@@ -9,4 +9,3 @@ presubmits:
         - image: quay.io/thoth-station/pre-commit:v0.17.0
           command:
             - "prow-job-precommit"
-
