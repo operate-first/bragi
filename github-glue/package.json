@@ -1,8 +1,8 @@
 {
-  "name": "{{name}}",
-  "version": "1.0.0",
+  "name": "bragi",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/{{org}}",
+  "homepage": "https://github.com/operate-first/bragi",
   "scripts": {
     "build": "tsc",
     "start": "node lib/index.js",
